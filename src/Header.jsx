@@ -8,11 +8,13 @@ const Header = () => {
     <div>
       <div className="header">
         <div className="left">
-          <img
-            className="app_logo"
-            src="https://res.cloudinary.com/lbs-harda/image/upload/v1658917314/CollegeLogo_dqno4q.png"
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="app_logo"
+              src="https://res.cloudinary.com/lbs-harda/image/upload/v1658917314/CollegeLogo_dqno4q.png"
+              alt=""
+            />
+          </Link>
           <h4 id="app_name">LBS Harda</h4>
         </div>
         <div className="right">
@@ -24,6 +26,12 @@ const Header = () => {
                 </Link>
               );
             })}
+            <a href="" target="_blank">
+              <div className="nav_button btn_youtube">Youtube</div>
+            </a>
+            <a href="" target="blank">
+              <div className="nav_button btn_ecampus">E-Campus</div>
+            </a>
           </ul>
         </div>
       </div>

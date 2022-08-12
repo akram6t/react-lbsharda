@@ -11,7 +11,6 @@
 
 #app_name {
   margin-left: 10px;
-  margin-top: 5px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -22,17 +21,19 @@
 
 .left {
   justify-content: start;
-  flex: 40%;
+  flex: 30%;
 }
 
 .right {
-  flex: 60%;
+  flex: 70%;
   justify-content: end;
 }
 
 .navList {
   list-style: none;
   display: flex;
+  margin-right: 10px;
+  align-items: center;
 }
 
 .navLink {
@@ -50,4 +51,28 @@
 }
 .navLink:focus {
   color: purple;
+}
+
+.navList a {
+  text-decoration: none;
+}
+.nav_button {
+  font-family: 'roboto', sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-left: 5px;
+}
+
+.nav_button:hover {
+  opacity: 0.5;
+}
+
+.btn_youtube {
+  background-color: rgb(226, 0, 0);
+}
+
+.btn_ecampus {
+  background-color: blue;
 }

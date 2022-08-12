@@ -1,7 +1,11 @@
 import React from 'react';
 import './MainPage.css';
+import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 const MainPage = () => {
   return (
@@ -9,7 +13,13 @@ const MainPage = () => {
       <div classname="navbar">
         <Header />
       </div>
-      <div className="content"></div>
+      <div className="content">
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </div>
       <div>
         <Footer />
       </div>
