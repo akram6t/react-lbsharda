@@ -1,0 +1,53 @@
+.header {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+}
+
+.app_logo {
+  width: 40px;
+  height: 40px;
+}
+
+#app_name {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  justify-content: start;
+  flex: 40%;
+}
+
+.right {
+  flex: 60%;
+  justify-content: end;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+}
+
+.navItem {
+  font-family: 'roboto', sans-serif;
+  padding: 8px;
+}
+
+.navLink:hover {
+  color: rgb(192, 0, 192);
+}
+.navLink:focus {
+  color: purple;
+}
