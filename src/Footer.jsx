@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="first">
-        <h4>Important Links</h4>
+        <h4 className="footerheader">Important Links</h4>
         <a className="social_link" href="http://mpbse.nic.in/">
           MPBSE
         </a>
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="second">
-        <h4>Contact</h4>
+        <h4 className="footerheader">Contact</h4>
         <span className="faddress">
           <CallIcon />
           <span>07577-292067</span>
@@ -48,7 +48,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="third">
-        <h4>Social</h4>
+        <h4 className="footerheader">Social</h4>
         <span className="faddress">
           <YouTubeIcon />
           <a
@@ -81,7 +81,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="fourth">
-        <h4>Address</h4>
+        <h4 className="footerheader">Address</h4>
         <div className="address">
           Handia Road, National Highway 59A Harda, Madhya Pradesh 461331
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavTopMenuData from './jsondata/data';
 import './css/sHeader.css';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   return (
@@ -15,7 +16,10 @@ const Header = () => {
               alt=""
             />
           </Link>
-          <h4 id="app_name">LBS Harda</h4>
+          <span className="name_container">
+          <h4 className="app_name short_name">LBS HARDA</h4>
+          <h4 className="app_name long_name">LAL BAHADUR SHASTRI COLLAGE HARDA (M.P)</h4>
+          </span>
         </div>
         <div className="right">
           <ul className="navList">
@@ -26,13 +30,19 @@ const Header = () => {
                 </Link>
               );
             })}
-            <a href="" target="_blank">
+            <a
+              href="https://www.youtube.com/channel/UCmKerU5uHmrVbdPYC-ksU8A"
+              target="_blank"
+            >
               <div className="nav_button btn_youtube">Youtube</div>
             </a>
-            <a href="" target="blank">
+            <a href="http://ecampus.lbsharda.com/" target="blank">
               <div className="nav_button btn_ecampus">E-Campus</div>
             </a>
           </ul>
+          <span className="btnopenMenu">
+            <MenuIcon />
+          </span>
         </div>
       </div>
     </div>

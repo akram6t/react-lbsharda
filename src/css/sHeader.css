@@ -9,9 +9,16 @@
   height: 40px;
 }
 
-#app_name {
-  margin-left: 10px;
+.name_container {
+  margin-left: 8px;
+}
+
+.app_name {
   font-family: 'Poppins', sans-serif;
+}
+
+.short_name {
+  display: none;
 }
 
 .header div {
@@ -75,4 +82,43 @@
 
 .btn_ecampus {
   background-color: blue;
+}
+
+.btnopenMenu {
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnopenMenu:hover {
+  opacity: 0.3;
+}
+
+@media (max-width: 850px) {
+  .header .left {
+    flex: 85%;
+  }
+  .header .right {
+    flex: 15%;
+    justify-content: end;
+  }
+  .navList {
+    display: none;
+  }
+
+  .btnopenMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .short_name {
+    display: flex;
+  }
+  .long_name {
+    display: none;
+  }
 }
