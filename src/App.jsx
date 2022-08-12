@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
+import MainPage from './MainPage';
 
 export default function App() {
   return (
     <div>
-      <Home />
+      <MainPage />
     </div>
   );
 }

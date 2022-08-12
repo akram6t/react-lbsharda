@@ -1,9 +1,9 @@
 import React from 'react';
-import './Home.css';
-import Header from '../Header';
-import Footer from '../Footer';
+import './MainPage.css';
+import Header from './Header';
+import Footer from './Footer';
 
-const Home = () => {
+const MainPage = () => {
   return (
     <div>
       <div classname="navbar">
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MainPage;
