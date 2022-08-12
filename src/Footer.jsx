@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/sfooter.css';
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
 import LanguageIcon from '@mui/icons-material/Language';
