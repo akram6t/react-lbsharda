@@ -2,6 +2,7 @@
   background-color: white;
   display: flex;
   padding: 10px;
+  box-shadow: 0px 0px 2px 1px rgb(206, 206, 206);
 }
 
 .app_logo {

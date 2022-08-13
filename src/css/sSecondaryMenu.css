@@ -1,0 +1,27 @@
+.slist_container {
+  padding: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smenu_list {
+  display: inline-flex;
+  list-style: none;
+}
+
+.sItem {
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media (max-width: 850px) {
+  .slist_container {
+    display: none;
+  }
+}
