@@ -17,8 +17,10 @@ const Header = () => {
             />
           </Link>
           <span className="name_container">
-          <h4 className="app_name short_name">LBS HARDA</h4>
-          <h4 className="app_name long_name">LAL BAHADUR SHASTRI COLLAGE HARDA (M.P)</h4>
+            <h4 className="app_name short_name">LBS HARDA</h4>
+            <h4 className="app_name long_name">
+              LAL BAHADUR SHASTRI COLLAGE HARDA (M.P)
+            </h4>
           </span>
         </div>
         <div className="right">
@@ -40,9 +42,11 @@ const Header = () => {
               <div className="nav_button btn_ecampus">E-Campus</div>
             </a>
           </ul>
-          <span className="btnopenMenu">
-            <MenuIcon />
-          </span>
+          <Link to="/menu">
+            <span className="btnopenMenu">
+              <MenuIcon />
+            </span>
+          </Link>
         </div>
       </div>
     </div>
