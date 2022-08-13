@@ -1,8 +1,9 @@
 .mtItem {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 2px;
+  padding: 3px;
   color: purple;
+  font-size: larger;
 }
 
 .mtItem:hover,

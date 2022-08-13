@@ -22,9 +22,12 @@ const Menu = () => {
             justifyContent: 'end',
           }}
         >
-          <Link style={{ padding: '5px' }} to="/">
-            <ClearIcon />
-          </Link>
+          <div style={{ flex: '90%' }}></div>
+          <div style={{ flex: '10%', marginTop: '10px', marginRight: '10px' }}>
+            <Link to="/">
+              <ClearIcon style={{ width: '40px', height: '40px' }} />
+            </Link>
+          </div>
         </div>
 
         <div style={{ display: 'flex' }}>
@@ -34,7 +37,6 @@ const Menu = () => {
               textAlign: 'center',
               justifyContent: 'center',
               backgroundColor: 'white',
-              paddingTop: '10px',
               paddingBottom: '10px',
             }}
           >
