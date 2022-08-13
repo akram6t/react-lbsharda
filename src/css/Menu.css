@@ -1,0 +1,42 @@
+.mtItem {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 2px;
+  color: purple;
+}
+
+.mtItem:hover,
+:focus {
+  opacity: 0.5;
+}
+
+.btnContainer {
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.btnContainer .mbtn {
+  text-decoration: none;
+  flex: 40%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnContainer .mbtn:hover {
+  opacity: 0.5;
+}
+
+.btnContainer .youtube {
+  background-color: red;
+}
+.btnContainer .ecampus {
+  background-color: purple;
+}

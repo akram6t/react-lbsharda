@@ -11,7 +11,7 @@ const SecondaryMenu = () => {
         {NavSecond.map((value, index) => {
           return (
             <li>
-              <h4 class="menu-title">{value.title}</h4>
+              <li class="menu-title">{value.title}</li>
               <ul class="menu_dropdown">
                 {value.data.map((val, i) => {
                   return (

@@ -2,25 +2,99 @@ import React from 'react';
 import NavTopMenuData, { NavSecond } from '../jsondata/data';
 import { Link } from 'react-router-dom';
 import ClearIcon from '@mui/icons-material/Clear';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import '../css/Menu.css';
 
 const Menu = () => {
   return (
     <div>
       <div>
-        <div>
-          <Link to="/">
+        <div
+          style={{
+            backgroundColor: 'white',
+            padding: '8px',
+            display: 'flex',
+            alignItem: 'center',
+            justifyContent: 'end',
+          }}
+        >
+          <Link style={{ padding: '5px' }} to="/">
             <ClearIcon />
           </Link>
         </div>
-        <ul>
-          {NavTopMenuData.map((val, index) => {
+
+        <div style={{ display: 'flex' }}>
+          <ul
+            style={{
+              width: '100%',
+              textAlign: 'center',
+              justifyContent: 'center',
+              backgroundColor: 'white',
+              paddingTop: '10px',
+              paddingBottom: '10px',
+            }}
+          >
+            {NavTopMenuData.map((v, ind) => {
+              return (
+                <Link
+                  className="aLink"
+                  to={v.link}
+                  style={{ textDecoration: 'none' }}
+                >
+                  <li className="mtItem">{v.title}</li>
+                </Link>
+              );
+            })}
+          </ul>
+        </div>
+
+        <div className="btnContainer">
+          <a
+            className="mbtn youtube"
+            href="https://www.youtube.com/channel/UCmKerU5uHmrVbdPYC-ksU8A"
+            target="_blank"
+          >
+            Youtube
+          </a>
+          <a
+            className="mbtn ecampus"
+            href="http://ecampus.lbsharda.com/"
+            target="_blank"
+          >
+            E-Campus
+          </a>
+        </div>
+
+        <div>
+          {NavSecond.map((value, index) => {
             return (
-              <Link to={val.link}>
-                <li>{val.title}</li>
-              </Link>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>{value.title}</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    {value.data.map((val, i) => {
+                      return (
+                        <Link to={val.link}>
+                          <li>{val.title}</li>
+                        </Link>
+                      );
+                    })}
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
             );
           })}
-        </ul>
+        </div>
       </div>
     </div>
   );
