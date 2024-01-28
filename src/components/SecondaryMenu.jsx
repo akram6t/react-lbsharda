@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavSecond } from '../jsondata/data';
 import '../css/sSecondaryMenu.css';
-import { Link } from 'react-router-dom';
 
 const SecondaryMenu = () => {
   return (
